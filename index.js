@@ -11,5 +11,9 @@ function nameToAttributes(drivers){
       obj.firstName = name[0]
       obj.lastName = name[1]
       return obj
-    })  
+    })
+}
+
+function attributesToPhrase(drivers){
+  return drivers.map(function(element){return `${element.name} is from ${element.hometown}`})
 }
